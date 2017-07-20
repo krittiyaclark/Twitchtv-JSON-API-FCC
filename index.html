@@ -3,7 +3,7 @@
 
 <head>
      <meta charset="UTF-8">
-     <title>Local Weather App</title>
+     <title>Twitchtv JSON API</title>
 
      <meta name="description" content="Free Code Camp front-end project use the Twitch.tv JSON API and JSON.">
      <meta name="keywords" content="HTML5,CSS, CSS3, JavaScript, API, JSON, Twitch, FreeCodeCamp">
@@ -31,21 +31,37 @@
        	<div class="row">
          <div id="sub-box">
            <div class="col-md-4 col-md-offset-4 input-group text-center">
-             <h2 class="text-center">Local Weather</h2>
-
-             <ul class="list-unstyled">
-               <li id="icon"></li>
-               <li id="city"></li>
-               <li id="weatherType"></li>
-               <li class="btn" id="temp"></li>
-             </ul>
-
+             <h2 class="text-center">Twitch TV JSON API</h2>
             </div><!-- .col-md-4 .col-md-offset-4 -->
           </div><!-- #sub-box -->
         </div><!-- .row -->
       </div><!-- .container -->
    </section><!-- #main-box -->
 
+
+      <section id="sub-main-box">
+         <div class="container">
+          	<div class="row">
+            <div id="sub-box">
+              <div class='spacer'></div>
+
+                <div class='block'>
+                  <div class='row'>
+                    <div class='col-md-4' id='user'>
+                      User:<br>
+                    </div>
+                    <div class='col-md-4' id='status'>
+                      Status:<br>
+                    </div>
+                    <div class='col-md-4' id='game'>
+                      Game:<br>
+                    </div>
+                  </div>
+
+             </div><!-- #sub-box -->
+           </div><!-- .row -->
+         </div><!-- .container -->
+      </section><!-- #main-box -->
 </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
