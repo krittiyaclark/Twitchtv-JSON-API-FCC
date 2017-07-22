@@ -1,0 +1,35 @@
+$primaryColor: #eeffcc;
+$fontColor: #fff;
+$font-size: 23px;
+
+
+body {
+  background-image: url("https://c1.staticflickr.com/5/4304/35646793470_751eecbfdd_h.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  background-color: $primaryColor;
+  font-size: $font-size;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.container {
+  background-color: #000;
+  border: 5px white solid;
+  color: $fontColor;
+  padding: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  @include border-radius(15px);
+}
+
+.spacer {
+    padding: 3%;
+}
