@@ -26,4 +26,22 @@ $(document).ready(function() {
 
   }); // end ajax
 
+  $.ajax({
+   type: "GET",
+   url: 'https://api.twitch.tv/kraken/users/freecodecamp/follows/channels/',
+   headers:{
+     'client-ID': 'jo5yejqiz1q6lkhyf08iixvd6lcdkh'
+   },
+   success: function(data2) {
+
+     for(var i = 0; i < data2.follows.length; i++) {
+        console.log(data2.follows[0]);
+
+     }
+   }
+ });
+
+
+   //if(data2)
+
 }); // end document
